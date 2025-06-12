@@ -12,6 +12,7 @@ Each of these is a separate repository and integrated via Git submodules to supp
 
 ## 📦 Monorepo Structure
 
+```
 hospital-app/
 ├── App.js # Root app component
 ├── index.js # Entry point for React Native
@@ -31,4 +32,4 @@ hospital-app/
 │ └── community/ # Submodule: Community feature
 ├── .gitmodules # Git submodule config
 └── README.md # Project overview and instructions
-
+```
