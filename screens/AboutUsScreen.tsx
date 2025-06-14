@@ -8,12 +8,9 @@ const Text = createText<Theme>();
 
 export default function AboutUsScreen() {
   return (
-    <Box flex={1} backgroundColor="black" padding="md">
-      <Text variant="header" color="primary" marginBottom="sl">
+    <Box flex={1} justifyContent="center" alignItems="center">
+      <Text textAlign="center" variant="header">
         About Us
-      </Text>
-      <Text variant="body" color="primary">
-        Learn more about our hospital and mission.
       </Text>
     </Box>
   );

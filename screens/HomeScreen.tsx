@@ -8,12 +8,9 @@ const Text = createText<Theme>();
 
 export default function HomeScreen() {
   return (
-    <Box flex={1} backgroundColor="black" padding="md">
-      <Text variant="header" color="primary" marginBottom="sl">
-        Welcome to Hospital App
-      </Text>
-      <Text variant="body" color="primary">
-        This is the home screen of your hospital application.
+    <Box flex={1} justifyContent="center" alignItems="center">
+      <Text textAlign="center" variant="header">
+        Home
       </Text>
     </Box>
   );

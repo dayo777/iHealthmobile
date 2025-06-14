@@ -6,9 +6,7 @@ import { SafeAreaProvider } from "react-native-safe-area-context";
 import useCachedResources from "./src/hooks/useCachedResources";
 import Navigation from "./navigation";
 import theme from "./src/constants/Colors";
-// import useCachedResources from "@/app/hooks/useCachedResources";
-// import Navigation from "./app/navigation";
-// import theme from "./constants/Colors";
+
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 
 export default function App() {

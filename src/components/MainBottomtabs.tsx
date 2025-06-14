@@ -23,7 +23,7 @@ export type TabType<K> = {
   svgIconName: IconName;
   component: React.FC;
 };
-
+//@ts-ignore
 type Props = DefaultNavigatorOptions<
   ParamListBase,
   TabNavigationState<ParamListBase>,
@@ -34,6 +34,7 @@ type Props = DefaultNavigatorOptions<
   MaterialBottomTabNavigationConfig;
 
 type BottomTabPropsType<T extends ParamListBase> = {
+  //@ts-ignore
   Tab: TypedNavigator<
     T,
     TabNavigationState<ParamListBase>,
@@ -46,7 +47,7 @@ type BottomTabPropsType<T extends ParamListBase> = {
       screenListeners,
       screenOptions,
       ...rest
-    }: Props) => JSX.Element
+    }: Props) => React.JSX.Element
   >;
   tabList: TabType<T>[];
 };
@@ -70,7 +71,7 @@ function MainBottomTabs<T extends ParamListBase>({
           key={tab.name.toString()}
           name={tab.name}
           options={{
-            tabBarIcon: ({ focused }) => (
+            tabBarIcon: ({ focused }: any) => (
               <Box alignItems="center" zIndex={999} justifyContent="center">
                 <Box
                   alignItems="center"
