@@ -11,7 +11,6 @@ import {
   TypedNavigator,
 } from "@react-navigation/native";
 import * as React from "react";
-// import Icon, { IconName } from "@/assets/icons/Icon";
 import { Text, Box } from "./Restyle";
 import Icon, { IconName } from "../assets/icons/Icon";
 
