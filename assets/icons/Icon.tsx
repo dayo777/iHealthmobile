@@ -3,9 +3,12 @@ import React from "react";
 import { StyleProp, ViewStyle } from "react-native";
 import { SvgProps } from "react-native-svg";
 
-// Import all your SVG files with correct names
-import home_active from "@/assets/icons/home.svg";
+import { Theme } from "@/constants/Colors";
+
+type IconFunction = React.FC<SvgProps>;
+
 import home_inactive from "@/assets/icons/home-inactive.svg";
+import home_active from "@/assets/icons/home.svg";
 import profile_active from "@/assets/icons/profile_active.svg";
 import profile_inactive from "@/assets/icons/profile_inactive.svg";
 import bell from "@/assets/icons/bell.svg";
@@ -20,10 +23,6 @@ import linkedin from "@/assets/icons/linkedin.svg";
 import mission from "@/assets/icons/mission.svg";
 import vision from "@/assets/icons/vision.svg";
 import values from "@/assets/icons/values.svg";
-
-import { Theme } from "@/src/constants/Colors";
-
-type IconFunction = React.FC<SvgProps>;
 
 export const ICONS = {
   home_active,
