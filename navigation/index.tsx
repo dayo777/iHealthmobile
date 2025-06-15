@@ -5,7 +5,7 @@ import {
 } from "@react-navigation/stack";
 import BottomTabs from "./home/bottomTabs";
 import { AppNavRoutes } from "./types";
-import { DonateScreen } from "@/src/submodules";
+import { DonateScreen } from "@/submodules";
 
 export type AppNavScreenProps<Screen extends keyof AppNavRoutes> =
   StackScreenProps<AppNavRoutes, Screen>;

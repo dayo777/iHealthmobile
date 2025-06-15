@@ -3456,6 +3456,19 @@ __metadata:
   languageName: node
   linkType: hard
 
+"donate-modules@workspace:submodules/DonateModules":
+  version: 0.0.0-use.local
+  resolution: "donate-modules@workspace:submodules/DonateModules"
+  dependencies:
+    "@types/react": ^19.1.8
+    "@types/react-native": ^0.73.0
+    typescript: ^5.8.3
+  peerDependencies:
+    react: ^19.1.0
+    react-native: ^0.80.0
+  languageName: unknown
+  linkType: soft
+
 "dot-case@npm:^3.0.4":
   version: 3.0.4
   resolution: "dot-case@npm:3.0.4"
