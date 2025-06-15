@@ -1,0 +1,29 @@
+{
+  "name": "donate-modules",
+  "version": "1.0.0",
+  "description": "Donate screen module for iHealthMobile app",
+  "main": "index.ts",
+  "types": "index.ts",
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": "^19.1.0",
+    "react-native": "^0.80.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.3",
+    "@types/react": "^19.1.8",
+    "@types/react-native": "^0.73.0"
+  },
+  "keywords": [
+    "react-native",
+    "donate",
+    "module",
+    "healthcare",
+    "screen"
+  ],
+  "author": "Hezhykeyhel",
+  "license": "MIT"
+}
