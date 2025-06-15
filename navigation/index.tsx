@@ -3,7 +3,6 @@ import {
   createStackNavigator,
   StackScreenProps,
 } from "@react-navigation/stack";
-import React from "react";
 import BottomTabs from "./home/bottomTabs";
 import { AppNavRoutes } from "./types";
 

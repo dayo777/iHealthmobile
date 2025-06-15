@@ -1,0 +1,3 @@
+[submodule "src/screens/submodules/DonateModules"]
+	path = src/screens/submodules/DonateModules
+	url = https://github.com/Hezhykeyhel/DonateModule.git
