@@ -3,9 +3,9 @@ import {
   createStackNavigator,
   StackScreenProps,
 } from "@react-navigation/stack";
-import React from "react";
 import BottomTabs from "./home/bottomTabs";
 import { AppNavRoutes } from "./types";
+import { DonateScreen } from "@/src/submodules";
 
 export type AppNavScreenProps<Screen extends keyof AppNavRoutes> =
   StackScreenProps<AppNavRoutes, Screen>;
@@ -59,6 +59,7 @@ function Navigation() {
       >
         {/* General Stacks */}
         <Stack.Screen component={BottomTabs} name="BottomTabs" />
+        <Stack.Screen component={DonateScreen} name="DonateScreen" />
       </Stack.Navigator>
     </NavigationContainer>
   );

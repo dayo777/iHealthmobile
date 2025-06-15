@@ -13,7 +13,7 @@ const DropdownModal = ({
   setIsOpen,
   filteredData,
   handleSelectItem,
-}) => {
+}: any) => {
   return (
     <>
       <TouchableWithoutFeedback onPress={() => setIsOpen(false)}>
@@ -25,19 +25,47 @@ const DropdownModal = ({
                 showsVerticalScrollIndicator={false}
                 contentContainerStyle={{ paddingBottom: 20 }}
               >
-                {filteredData?.map((item) => (
-                  <Pressable
-                    key={item.name}
-                    onPress={() => handleSelectItem(item)}
-                    flexDirection="row"
-                    paddingHorizontal="sm"
-                    alignItems="center"
-                  >
-                    <Text variant="body" padding="sm">
-                      {item.name}
-                    </Text>
-                  </Pressable>
-                ))}
+                {filteredData?.map(
+                  (item: {
+                    name:
+                      | boolean
+                      | React.ReactElement<
+                          unknown,
+                          string | React.JSXElementConstructor<any>
+                        >
+                      | Iterable<React.ReactNode>
+                      | Promise<
+                          | string
+                          | number
+                          | bigint
+                          | boolean
+                          | React.ReactPortal
+                          | React.ReactElement<
+                              unknown,
+                              string | React.JSXElementConstructor<any>
+                            >
+                          | Iterable<React.ReactNode>
+                          | null
+                          | undefined
+                        >
+                      | React.Key
+                      | null
+                      | undefined;
+                  }) => (
+                    <Pressable
+                      //@ts-ignore
+                      key={item.name}
+                      onPress={() => handleSelectItem(item)}
+                      flexDirection="row"
+                      paddingHorizontal="sm"
+                      alignItems="center"
+                    >
+                      <Text variant="body" padding="sm">
+                        {item.name}
+                      </Text>
+                    </Pressable>
+                  )
+                )}
               </ScrollView>
             </View>
           </TouchableWithoutFeedback>

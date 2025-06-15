@@ -1,8 +1,11 @@
-import { AboutUs, HomePage } from "@/app/screen";
-import MainBottomTabs, { TabType } from "@/components/MainBottomtabs";
+
+// import MainBottomTabs, { TabType } from "@/components/MainBottomtabs";
 import { createMaterialBottomTabNavigator } from "@react-navigation/material-bottom-tabs";
 import React from "react";
 import { BottomTabsRoute } from "../types";
+import MainBottomTabs, { TabType } from "@/src/components/MainBottomtabs";
+import AboutUsScreen from "@/screens/AboutUsScreen";
+import HomeScreen from "@/screens/HomeScreen";
 
 const Tab = createMaterialBottomTabNavigator<BottomTabsRoute>();
 
@@ -13,14 +16,14 @@ type TabRoute = {
 
 const tabList: TabType<TabRoute>[] = [
   {
-    component: HomePage,
+    component: HomeScreen,
     inactiveTabIcon: "home_inactive",
     name: "HomePage",
     svgIconName: "home_active",
     tabText: "Home",
   },
   {
-    component: AboutUs,
+    component: AboutUsScreen,
     inactiveTabIcon: "profile_inactive",
     name: "AboutUs",
     svgIconName: "profile_active",
