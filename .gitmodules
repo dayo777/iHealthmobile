@@ -1,6 +1,3 @@
-[submodule "src/screens/submodules/DonateModules"]
-	path = src/screens/submodules/DonateModules
-	url = https://github.com/Hezhykeyhel/DonateModule.git
-[submodule "src/submodules/src/submodules/DonateModules"]
-	path = src/submodules/src/submodules/DonateModules
-	url = https://github.com/Hezhykeyhel/DonateModule.git
+[submodule "src/submodules/DonateModules"]
+  path = src/submodules/DonateModules
+  url = https://github.com/Hezhykeyhel/DonateModules.git
