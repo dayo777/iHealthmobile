@@ -17,8 +17,8 @@ import {
   BottomSheetBackdrop,
   BottomSheetFlatList,
 } from "@gorhom/bottom-sheet";
-import Box from "@/components/Restyle/Box";
-import Text from "@/components/Restyle/Text";
+import Box from "@/src/components/Restyle/Box";
+import Text from "@/src/components/Restyle/Text";
 import { Image, Pressable } from "./Restyle";
 import Icon from "@/assets/icons/Icon";
 
