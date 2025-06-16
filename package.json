@@ -19,6 +19,10 @@
     "healthcare",
     "mobile"
   ],
+  "private": true,
+  "workspaces": [
+    "submodules/DonateModules"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
