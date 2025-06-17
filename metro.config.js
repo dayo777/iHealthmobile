@@ -1,19 +1,31 @@
 const { getDefaultConfig } = require("expo/metro-config");
+const path = require("path");
 
-module.exports = (() => {
-  const config = getDefaultConfig(__dirname);
+const projectRoot = __dirname;
+const monorepoRoot = path.resolve(projectRoot, ".");
 
-  const { transformer, resolver } = config;
+const config = getDefaultConfig(projectRoot);
 
-  config.transformer = {
-    ...transformer,
-    babelTransformerPath: require.resolve("react-native-svg-transformer"),
-  };
-  config.resolver = {
-    ...resolver,
-    assetExts: resolver.assetExts.filter((ext) => ext !== "svg"),
-    sourceExts: [...resolver.sourceExts, "svg"],
-  };
+// Define your submodule packages
+const submodulePackages = {
+  AboutModules: path.resolve(monorepoRoot, "submodules/AboutModules"),
+};
 
-  return config;
-})();
+// 1. Watch all relevant directories including submodules
+config.watchFolders = [projectRoot, ...Object.values(submodulePackages)];
+
+// 2. Configure resolver to handle submodule paths
+config.resolver.nodeModulesPaths = [
+  path.resolve(projectRoot, "node_modules"),
+  path.resolve(monorepoRoot, "node_modules"),
+  ...Object.values(submodulePackages).map((pkg) =>
+    path.resolve(pkg, "node_modules")
+  ),
+];
+
+// 3. Add alias resolution for submodule absolute imports
+config.resolver.alias = {
+  "@": path.resolve(monorepoRoot, "submodules/AboutModules/src"),
+};
+
+module.exports = config;
