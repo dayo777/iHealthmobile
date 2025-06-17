@@ -1,3 +1,6 @@
 [submodule "submodules/DonateModules"]
 	path = submodules/DonateModules
 	url = https://github.com/Hezhykeyhel/DonateModules.git
+[submodule "submodules/AboutModules"]
+	path = submodules/AboutModules
+	url = https://github.com/idyWilliams/ihealth_about.git
