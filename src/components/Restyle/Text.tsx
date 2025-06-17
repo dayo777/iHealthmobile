@@ -1,7 +1,7 @@
 import { createText } from "@shopify/restyle";
 import { ComponentProps, FC, memo } from "react";
 
-import { Theme } from "@/constants/Colors";
+import { Theme } from "@/src/constants/Colors";
 
 /**
  * Custom `Text` component with type-checked layout stylings and props including typography.

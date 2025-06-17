@@ -1,6 +1,6 @@
 import { createBox } from "@shopify/restyle";
 
-import { Theme } from "@/constants/Colors";
+import { Theme } from "@/src/constants/Colors";
 
 /**
  * Custom `View` component with type checked layout stylings and props.

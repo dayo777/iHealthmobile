@@ -1,7 +1,7 @@
 import React from "react";
 import { Modal, TouchableOpacity } from "react-native";
-import { Box, Image, Text } from "@/components/Restyle";
-import Icon from "@/assets/icons/Icon";
+import { Box, Image, Text } from "@/src/components/Restyle";
+import Icon from "@/src/assets/icons/Icon";
 import { ScrollView } from "react-native";
 
 type TermsModalProps = {
@@ -12,7 +12,7 @@ type TermsModalProps = {
 
 const TermsModal = ({ visible, onClose, termsText }: TermsModalProps) => {
   return (
-  
+
 
     <Modal visible={visible} animationType="slide" transparent>
       <Box

@@ -1,7 +1,7 @@
 import React from "react";
 import { View, Dimensions } from "react-native";
-import Carousel from "react-native-snap-carousel";
-import { Box, Image, Text } from "@/components/Restyle";
+// import Carousel from "react-native-snap-carousel";
+import { Box, Image, Text } from "@/src/components/Restyle";
 
 type TrustedBrand = {
   name: string;
