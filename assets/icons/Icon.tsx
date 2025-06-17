@@ -2,8 +2,7 @@
 import React from "react";
 import { StyleProp, ViewStyle } from "react-native";
 import { SvgProps } from "react-native-svg";
-
-import { Theme } from "@/constants/Colors";
+import { Theme } from "@/src/constants/Colors";
 
 type IconFunction = React.FC<SvgProps>;
 
